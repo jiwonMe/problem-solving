@@ -8,8 +8,8 @@
 
 int main()
 {
-    float a, b;
-    scanf("%f %f", &a, &b);
-    printf("%lf", a / b);
+    double a, b;
+    scanf("%lf %lf", &a, &b);
+    printf("%.32lf", (a / b));
 }
 /* END */
