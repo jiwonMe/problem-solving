@@ -16,5 +16,7 @@ int main()
     printf("%d\n", a * ((b % 100) / 10));
 
     printf("%d\n", a * (b / 100));
+
+    printf("%d\n", a * b);
 }
 /* END */
