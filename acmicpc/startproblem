@@ -1,0 +1,25 @@
+#!bin/bash
+
+for i in $@
+do
+    if [ ! -d $i ]; then
+        PRESET="/**
+ * https://www.acmicpc.net/problem/$i
+ * Jiwon Park 2021 (c)
+ */
+
+/* BEGIN */
+#include <stdio.h>
+
+int main()
+{
+
+}
+/* END */
+"
+        mkdir -p $i
+        cd $i
+        echo "$PRESET" >> $i.c
+        cd ..
+    fi
+done
