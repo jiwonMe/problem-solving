@@ -1,5 +1,5 @@
-/** 
- * https://www.acmicpc.net/problem/1000
+/**
+ * https://www.acmicpc.net/problem/10998
  * Jiwon Park 2021 (c)
  */
 
@@ -10,6 +10,6 @@ int main()
 {
     int a, b;
     scanf("%d %d", &a, &b);
-    prtinf("%d", a + b);
+    printf("%d", a * b);
 }
 /* END */
