@@ -2,7 +2,7 @@
 
 for i in $@
 do
-    if [ ! -d $i ]; then
+    if [ ! -d "💡 $i" ]; then
         PRESET="/**
  * https://www.acmicpc.net/problem/$i
  * Jiwon Park 2021 (c)
@@ -17,8 +17,8 @@ int main()
 }
 /* END */
 "
-        mkdir -p $i
-        cd $i
+        mkdir -p "💡 $i"
+        cd "💡 $i"
         echo "$PRESET" >> $i.c
         cd ..
     fi
